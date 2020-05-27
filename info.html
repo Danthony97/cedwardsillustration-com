@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+
+.top-container {
+  padding: 30px;
+  text-align: center;
+}
+.header {
+  padding: 10px 16px;
+  background: #FFADC9;
+  color: #ebf1ea;
+}
+
+/* unvisited link */
+a:link, a:visited {
+  background-color: none;
+  color: white;
+  padding: 24px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 80%;
+
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+.cred{
+  float: right;
+  font-size:12px;
+  color: rgb(189, 181, 181);
+  padding: 16px;
+  background-color: rgb(37, 37, 37);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-paint-brush{
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+body {
+  background-color: rgb(43, 41, 41)
+}
+
+.icon{
+  float: right;
+  padding: 0px 320px
+}
+
+</style>
+<body>
+
+<!-- Header -->
+<div style="background-image: url('media/header.png'); background-size: cover;" class="top-container">
+  <img src="media/icon.png" width="200" height="200"; style="vertical-align: middle">
+  <h1 style="display: inline; font-size: 36px">Christina Edwards</h1>
+  <p style="display: inline;">Artist Portfolio.</p>
+</div>
+
+
+
+
+
+<div class="header" id="myHeader">
+    <a href="index.html">Home</a>
+    <a href="roughs.html">Roughs</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="info.html">About Me</a>
+</div>
+ 
+
+
+<div>
+  <img class= "icon" src= "media/icon2.png">
+  <h1 style="padding: 10px 400px; color: #FFADC9; font-size: 80px">Christina Edwards</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+  <br>Hello! I'm a 21-year-old Freelance Artist from California. I love figure drawing above else. I have only recently come to appreciate fashion art, and how much fun the folds of clothes can be. I hope one day that I can professionally illustrate for a game development company
+  
+</div>
+
+
+<div style= "background-color: rgb(37, 37, 37); padding: 16px;">
+  <p class= cred>cedwards.illustration@gmail.com
+  <br>©2020 by Christina Edwards.
+  </p>
+  <a href="https://twitter.com/casualspook" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/ghostinas/" class="fa fa-instagram"></a>
+  <a href="https://www.artstation.com/ghostina"class="fa fa-paint-brush"></a>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+
+
+</body>
+</html>

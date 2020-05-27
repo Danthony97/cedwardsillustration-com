@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.row2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column2 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.top-container {
+  padding: 30px;
+  text-align: center;
+}
+.header {
+  padding: 10px 16px;
+  background: #FFADC9;
+  color: #ebf1ea;
+}
+
+/* unvisited link */
+a:link, a:visited {
+  background-color: none;
+  color: white;
+  padding: 24px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 80%;
+
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+.jam {
+  padding: 40px 0;
+  text-align: center;  
+  color:  #FFADC9;
+}
+
+.cred{
+  float: right;
+  font-size:12px;
+  color: rgb(189, 181, 181);
+  padding: 16px;
+  background-color: rgb(37, 37, 37);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-paint-brush{
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+</style>
+<body>
+
+<!-- Header -->
+<div style="background-image: url('media/header.png'); background-size: cover;" class="top-container">
+  <img src="media/icon.png" width="200" height="200"; style="vertical-align: middle">
+  <h1 style="display: inline; font-size: 36px">Christina Edwards</h1>
+  <p style="display: inline;">Artist Portfolio.</p>
+</div>
+
+<div class="header" id="myHeader">
+    <a href="index.html">Home</a>
+    <a href="roughs.html">Roughs</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="info.html">About Me</a>
+</div>
+
+
+<!-- Photo Grid -->
+<div class="row" style="background-image: url('media/bg.png'); background-repeat: no-repeat; background-size: 100% 100%;"> 
+  <div class="column">
+    <img src="media/rough_blue.png" style="width:100%">
+    <img src="media/rough_cat.png" style="width:100%">
+    <img src="media/rough_comm.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="media/rough_demon.png" style="width:100%">
+    <img src="media/rough_figure.png" style="width:100%">
+    <img src="media/rough_green.png" style="width:100%">
+
+  </div>  
+  <div class="column">
+    <img src="media/rough_knight.png" style="width:100%">
+    <img src="media/rough_multi.png" style="width:100%">
+    <img src="media/rough_pink.png" style="width:100%">
+
+  </div>
+  <div class="column">
+    <img src="media/rough_self.png" style="width:100%">
+    <img src="media/rough_silver.png" style="width:100%">
+    <img src="media/rough_figure2.png" style="width:100%">
+
+  </div>
+
+</div>
+
+
+
+  
+<div style= "background-color: rgb(37, 37, 37); padding: 16px;">
+  <p class= cred>cedwards.illustration@gmail.com
+  <br>©2020 by Christina Edwards.
+  </p>
+  <a href="https://twitter.com/casualspook" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/ghostinas/" class="fa fa-instagram"></a>
+  <a href="https://www.artstation.com/ghostina"class="fa fa-paint-brush"></a>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+
+
+</body>
+</html>

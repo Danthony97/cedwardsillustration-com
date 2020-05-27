@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+
+.top-container {
+  padding: 30px;
+  text-align: center;
+}
+.header {
+  padding: 10px 16px;
+  background: #FFADC9;
+  color: #ebf1ea;
+}
+
+/* unvisited link */
+a:link, a:visited {
+  background-color: none;
+  color: white;
+  padding: 24px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.sticky + .row {
+  padding-top: 102px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 80%;
+
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:100%;
+  }
+  100% {
+    opacity:70%;
+  }
+}
+
+.cred{
+  float: right;
+  font-size:12px;
+  color: rgb(189, 181, 181);
+  padding: 16px;
+  background-color: rgb(37, 37, 37);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.fa-paint-brush{
+  background: rgb(37, 37, 37);
+  color: white;
+}
+
+.mini{
+  float: right;
+  padding: 0px 400px
+}
+
+.full{
+  float:right;
+  padding: 40px 400px
+}
+
+body {
+  background-color: rgb(43, 41, 41)
+}
+
+.design{
+  float: right;
+  padding: 40px 400px
+}
+</style>
+<body>
+
+<!-- Header -->
+<div style="background-image: url('media/header.png'); background-size: cover;" class="top-container">
+  <img src="media/icon.png" width="200" height="200"; style="vertical-align: middle">
+  <h1 style="display: inline; font-size: 36px">Christina Edwards</h1>
+  <p style="display: inline;">Artist Portfolio.</p>
+</div>
+
+<div class="header" id="myHeader">
+    <a href="index.html">Home</a>
+    <a href="roughs.html">Roughs</a>
+    <a href="commissions.html">Commissions</a>
+    <a href="info.html">About Me</a>
+</div>
+ 
+<div>
+    <img class= "mini" src= "media/comm_mini.png">
+    <h1 style="padding: 10px 400px; color:  #FFADC9;">Mini Painting</h1>
+    <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">(Most Popular!)
+      <br><b>Starting at $30</b>
+      <br>
+      <br>
+      <br>Mini Paintings are a quicker style that I usually prefer. Not everything is fully blended out, but I really like this style. These will always have a simple background.
+      <br>
+      <br>
+      <br><b>Portraits: $30</b>
+      <br><b>Waist-Up: $55</b>
+      <br><b>Full-Body: $75</b>
+      <br>
+      <br>
+      <br>Additional Characters: + $20/30/45 each
+      <br>Complex Designs: +$10 or simplified
+      <br>Character Sheet Add-On: Sheet Pricing +$10/20/40
+    </p>
+</div>
+
+<div>
+  <img class="full" src="media/comm_full.png">
+  <h1 style="padding: 200px 400px 0px; color:  #FFADC9;">Fully Colored</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+      <br><b>Starting at $60</b>
+      <br>
+      <br>
+      <br>This is an extremely slow painting style, taking roughly 4-6x as long as the styles above. I blend heavily and try to implement new, professional techniques for an extremely polished look
+      <br>
+      <br>
+      <br><b>Portraits: $65</b>
+      <br><b>Waist-Up: $90</b>
+      <br><b>Full-Body: $120</b>
+      <br>
+      <br>
+      <br>Tight deadlines: +$10
+      <br>Additional Character: +$40/50/75
+      <br>Complex Character Designs: +$15
+      <br>Character Sheet Add-on: Sheet Pricing + $75
+    </p>
+
+</div>
+
+<div>
+    <img class="design" src="media/comm_design.png">
+    <h1 style="padding: 100px 400px 0px; color:  #FFADC9;">Character Design</h1>
+    <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+        <br><b>Starting at $45 | Discounts with Volume</b>
+        <br>
+        <br>
+        <br>Character designs come in a sketchy format by default. Quality raises would be considered an add-on to the two tiers below. Discounts with volume are still applicable.
+        <br>
+        <br>
+        <br><b>3D Turnaround: + $35</b>
+        <br><b>Expression Sheet: + $25</b>
+        <br><b>Recolors & Variation: + $15 ea, or free if extremely simple</b>
+        <br><b>Quality Increase: +$10-$75, bundle discounts available</b>
+        <br>
+        <br>
+      </p>
+  
+</div>
+
+<div style="background-color: rgb(17, 17, 17); padding: 16px;">
+  <h1 style="padding: 100px 400px 0px; color:  #FFADC9; text-align: center; font-size: 50px">Terms of Service</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+  <br><b>I will always ask if you've read the terms of service, and I consider discord chat messages and emails part of a written agreement. It is possible to discuss and renegotiate those terms.</b>
+  </p>
+
+  <h1 style="padding: 100px 400px 0px; color:  #FFADC9; text-align: center; font-size: 45px">Pricing Methods</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+  <br>Commissions below $50 will be paid in full after a thumbnail is approved. Commissions exceeding $50 can be paid in half after the sketch, and before the full-res version of the work is sent to you.
+  <br>
+  <br>Please be absolutely certain that this is the perspective, pose, and tone that you want for your character, I do not mind creating more thumbnails versus restarting after 6 hours of work. Additional charges can occur for restarting large portions of work.
+  <br>
+  <br>Also, I occasionally upgrade commissions by a tier if I'm having fun. It might be a waste of my time, but this will be of no charge to you. If you definitely don't want this to happen, let me know. I try to ask.
+  </p>
+
+  <h1 style="padding: 100px 400px 0px; color:  #FFADC9; text-align: center; font-size: 45px">Time & Delays</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+  <br>The artwork can take anywhere from 3 hours (including consultation) to 2 months to complete.
+  <br>
+  <br>If you have deadlines to consider, please be clear on this from the beginning. I will let you know if your piece is possible to complete in such a time frame.
+  <br>
+  <br>Small corrections are entirely free of charge.
+  <br>
+  <br>If there is a miscommunication in our consultation that results in a large, unexpected correction that adds 1 hour or more of work, there will be an additional charge.
+  <br>
+  <br>You will not be charged for my forgetfulness. You will not be charged for small corrections that eventually accumulate to an hour of work.
+  <br>
+  </p>
+
+  <h1 style="padding: 100px 400px 0px; color:  #FFADC9; text-align: center; font-size: 50px">Termination</h1>
+  <p style="padding: 10px 400px; font-size: 22px; color: rgb(189, 181, 181);">
+  <br><b>I do have the right to refund your money at any point and cease working on your commission. You will be fully refunded in this case, minus the tax removed from PayPal.</b>
+  </p>
+
+</div>
+
+
+
+<div style= "background-color: rgb(37, 37, 37); padding: 16px;">
+  <p class= cred>cedwards.illustration@gmail.com
+  <br>©2020 by Christina Edwards.
+  </p>
+  <a href="https://twitter.com/casualspook" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/ghostinas/" class="fa fa-instagram"></a>
+  <a href="https://www.artstation.com/ghostina"class="fa fa-paint-brush"></a>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+
+
+</body>
+</html>
